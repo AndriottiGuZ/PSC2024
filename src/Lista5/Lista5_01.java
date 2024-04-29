@@ -1,10 +1,8 @@
 package Lista5;
 
-import com.sun.jdi.ArrayReference;
-
 import java.util.Arrays;
 
-public class Lista5_1 {
+public class Lista5_01 {
     public static void main(String[] args) {
         int[][] matriz = new int[2][];
         matriz[0] = new int[7];

@@ -2,7 +2,7 @@ package Lista5;
 
 import java.util.Random;
 
-public class Lista5_2 {
+public class Lista5_02 {
     public static void main(String[] args){
 
 

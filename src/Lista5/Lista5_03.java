@@ -1,9 +1,8 @@
 package Lista5;
 
-import java.util.Arrays;
 import java.util.Random;
 
-public class Lista5_3 {
+public class Lista5_03 {
     public static void main(String[] args) {
         int[] C = new int[5];
         int[][] M = new int[2][5];
