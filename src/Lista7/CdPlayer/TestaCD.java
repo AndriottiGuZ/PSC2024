@@ -1,4 +1,4 @@
-package CdPlayer;
+package Lista7.CdPlayer;
 
 import java.util.Scanner;
 

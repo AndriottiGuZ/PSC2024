@@ -1,4 +1,4 @@
-package ExecQuadrados;
+package Lista7.Quadrados;
 
 import java.util.Scanner;
 

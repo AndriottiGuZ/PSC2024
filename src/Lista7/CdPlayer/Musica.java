@@ -1,4 +1,4 @@
-package CdPlayer;
+package Lista7.CdPlayer;
 
 public class Musica extends CD {
 

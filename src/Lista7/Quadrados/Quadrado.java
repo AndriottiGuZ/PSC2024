@@ -1,4 +1,4 @@
-package ExecQuadrados;
+package Lista7.Quadrados;
 
 public class Quadrado {
 
