@@ -55,7 +55,7 @@ public class CD {
     String nomeDaBanda;
     String titulo;
     int anoLançamento;
-    int numeroDeMusicas;
+    int numeroDeMusicas = 20;
     float tempoTotalDoCD;
     ArrayList<Musica> musicas;
 }

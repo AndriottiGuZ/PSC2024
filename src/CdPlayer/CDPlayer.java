@@ -1,10 +1,10 @@
 package CdPlayer;
 
-public class CDPlayer {
+public class CDPlayer extends Musica {
 
-    int faixaAtual;
-    int estado;
-    CD cd;
+    int faixaAtual = 1;
+    String estado;
+    CD cd = new CD();
 
     public int getFaixaAtual() {
         return faixaAtual;
@@ -14,12 +14,13 @@ public class CDPlayer {
         this.faixaAtual = faixaAtual;
     }
 
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public String setEstado(String estado) {
         this.estado = estado;
+        return estado;
     }
 
     public CD getCd() {
@@ -30,26 +31,41 @@ public class CDPlayer {
         this.cd = cd;
     }
 
-    void tocaCD() {
+    public void tocaCD() { setEstado("tocando");
 
     }
 
-    void interrompeCD() {
+    public void interrompeCD() { setEstado("pausado");
 
     }
 
-    void paraCD() {
+    public void paraCD() { setEstado("parado");
 
     }
 
-    void proximaFaixa() {
+    public void proximaFaixa() {
+        if (faixaAtual < numeroDeMusicas) {faixaAtual++;
+            System.out.println("\npassando para proxima faixa, faixa de numero " + faixaAtual);
+        } else { faixaAtual = 1;
+            System.out.println("\npassando para proxima faixa, faixa de numero " + faixaAtual);
+        }
+        }
 
-    }
+        public void faixaAnterior () {
+            {
+                if (faixaAtual > 1) {faixaAtual--;
+                    System.out.println("\nvoltando para faixa anterior, faixa de numero " + faixaAtual);
+                } else {faixaAtual = 20;
+                    System.out.println("\npassando para proxima faixa, faixa de numero " + faixaAtual);
+                }
 
-    void faixaAnterior() {
+            }
+        }
 
-    }
+            public void Status () {
+                System.out.println("\nstaus: " + getEstado());
+                System.out.println("faixa atual: " + getFaixaAtual());
+                System.out.println("numero de faixas : " + getNumeroDeMusicas());
 
-    public static void main(String[] args) {
-    }
+            }
 }

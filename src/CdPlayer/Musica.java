@@ -1,6 +1,6 @@
 package CdPlayer;
 
-public class Musica {
+public class Musica extends CD {
 
     String titulo;
 
